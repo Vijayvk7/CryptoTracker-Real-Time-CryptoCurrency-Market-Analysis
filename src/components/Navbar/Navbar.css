@@ -1,0 +1,129 @@
+.Navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid black;
+    background-color: linear-gradient(135deg, #556cd4 0%, #4b3166 100%);
+    padding: 0 20px;
+}
+
+.brand-name {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    margin-left: -45px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: -175px;
+}
+
+.Navbar .Logo {
+    width: max(12vw, 120px);
+}
+
+.Curr {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.Navbar select {
+    border-radius: 7px;
+    background: #556cd4;
+    border-color: black;
+    color: rgb(255, 255, 255);
+    width: 80px;
+    height: 27px;
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.Navbar option {
+    border-radius: 7px;
+    background: rgb(52, 47, 122);
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    width: 110px;
+    height: 33px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(60, 51, 134);
+    border-radius: 7px;
+    font-size: large;
+    font-weight: 800;
+}
+
+.btn img {
+    width: 20px
+}
+
+@media (max-width: 900px) {
+    .Navbar {
+        padding: 20px 8%;
+    }
+    .Navbar .brand-name {
+        font-size: 5vw;
+    }
+    .Navbar .Logo {
+        width: max(15vw, 60px);
+    }
+    .Navbar button {
+        gap: 8px;
+        padding: 8px, 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        padding: 20px 5%;
+    }
+    .Navbar .brand-name {
+        font-size: 6vw;
+    }
+    .Navbar .Logo {
+        width: max(20vw, 70px);
+    }
+    .Navbar ul {
+        display: none;
+    }
+    .Navbar button img {
+        width: 12px;
+    }
+    .brand {
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 20px;
+        /* Adjusted margin */
+    }
+    .brand-name {
+        margin-left: 10px;
+        /* Adjusted margin */
+    }
+    .Curr p {
+        display: none;
+        /* Hide the Currency text */
+    }
+}

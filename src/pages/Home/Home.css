@@ -1,0 +1,118 @@
+.Home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Home h2 {
+    font-weight: 700;
+}
+
+.Home p {
+    font-size: large;
+    font-weight: 700;
+}
+
+.Home form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 1px;
+}
+
+.back {
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    width: 60px;
+    height: 30px;
+    border-radius: 9px;
+}
+
+.Home input {
+    width: 210px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.Home button {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(10, 29, 65);
+    color: beige;
+    border-radius: 9px;
+}
+
+.crypto-table {
+    width: 100%;
+    max-width: 970px;
+    margin: auto;
+    background-color: rgb(10, 29, 65);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/*Change*/
+
+.table-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 1.4fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.table-layout.header {
+    background-color: #1a1a1a;
+    font-weight: bold;
+}
+
+.coin-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img {
+    height: 30px;
+    width: 30px;
+}
+
+.table-layout p {
+    margin: 0;
+}
+
+.table-layout p:nth-child(5) {
+    text-align: right;
+}
+
+.imgandname {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.pos {
+    color: rgb(73, 192, 36);
+    text-align: center;
+}
+
+.neg {
+    color: rgba(223, 26, 26, 0.781);
+}
+
+@media(max-width:768px) {
+    .table-layout {
+        grid-template-columns: 0.3fr 1fr 0.5fr 0.5fr;
+    }
+    .market-cap {
+        display: none;
+    }
+}
